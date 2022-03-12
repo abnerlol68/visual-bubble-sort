@@ -1,0 +1,78 @@
+@import "./normalize.css";
+
+:root {
+    --danger: #ff4136;
+    --success: #01ff01;
+}
+
+body {
+    background: #212326;
+    color: #f0f8ff;
+    font-family: sans-serif;
+}
+
+.stg {
+    background: #161616;
+    width: 450px;
+    height: 100vh;
+    padding: 6rem 2rem;
+}
+
+.stg > div {
+    margin-bottom: 20px;
+}
+
+.stg-top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    border-bottom: 1px solid var(--success);
+    padding: 10px;
+}
+
+.stg-top span {
+    margin: auto;
+    font-size: 28px;
+}
+
+.stg-top i {
+    color: var(--danger);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.stg-arr, .stg-mls, .stg-save {
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.stg div label {
+    font-size: 20px;
+}
+
+.stg-save {
+    padding: 0 8rem;
+}
+
+.stg div button {
+    font-size: 16px;
+    color: #212326;
+    height: 2.6rem;
+    background: var(--success);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.stg-status {
+    display: flex;
+    justify-content: center;
+}
+
+/* .stg-status p {
+    color: var(--danger);
+} */
