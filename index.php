@@ -8,19 +8,19 @@
   <link rel="shortcut icon" href="img/bubbles.png" type="image/x-icon">
   <link rel="stylesheet" href="styles/style.css">
   <script defer src="https://kit.fontawesome.com/ab0b12f76d.js" crossorigin="anonymous"></script>
-
+  <script defer src="js/main.js"></script>
   <title>Bubble Sort</title>
 </head>
 
 <body>
   <?php require "partials/sidebar-settings.php" ?>
-  <!-- <header>
-    <i class="fa-solid fa-bars"></i>
-    <h1>Bubble Sort Visualization</h1>
+  <header>
+      <i class="fa-solid fa-bars" id="sdbSettings"></i>
+      <h1>Bubble Sort Visualization</h1>
   </header>
 
   <main></main>
 
-  <footer></footer> -->
+  <footer></footer>
 </body>
 </html>

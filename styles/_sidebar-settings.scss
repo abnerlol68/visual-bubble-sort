@@ -3,9 +3,15 @@ $success: #01ff01;
 
 .stg {
     background: #161616;
-    width: 450px;
-    height: 100vh;
-    padding: 6rem 2rem;
+    width: 400px;
+    height: 100%;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    left: -600px;
+    position: fixed;
+    transition: all 600ms linear;
+    z-index: 2;
 
     div {
         margin-bottom: 20px;
@@ -16,12 +22,17 @@ $success: #01ff01;
     }
 }
 
+.stg.active {
+    left: 0;
+}
+
 .stg-top {
     display: flex;
     justify-content: space-between;
     font-size: 24px;
     border-bottom: 1px solid $success;
     padding: 10px;
+    margin-top: 2rem;
 
     span {
         margin: auto;
@@ -61,4 +72,8 @@ $success: #01ff01;
 .stg-status {
     display: flex;
     justify-content: center;
+
+    p {
+        color: $success;
+    }
 }

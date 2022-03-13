@@ -5,4 +5,21 @@ body {
     background: #212326;
     color: #f0f8ff;
     font-family: sans-serif;
+    height: 100vh;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    place-items: center;
+
+    i {
+        font-size: 1.9rem;
+        cursor: pointer;
+    }
+
+    h1 {
+        font-weight: 500;
+        font-size: 2.2rem;
+    }
 }

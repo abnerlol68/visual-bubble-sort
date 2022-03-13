@@ -235,9 +235,15 @@ input[type=checkbox], input[type=radio] {
 
 .stg {
   background: #161616;
-  width: 450px;
-  height: 100vh;
-  padding: 6rem 2rem;
+  width: 400px;
+  height: 100%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  left: -600px;
+  position: fixed;
+  transition: all 600ms linear;
+  z-index: 2;
 }
 .stg div {
   margin-bottom: 20px;
@@ -246,12 +252,17 @@ input[type=checkbox], input[type=radio] {
   font-size: 20px;
 }
 
+.stg.active {
+  left: 0;
+}
+
 .stg-top {
   display: flex;
   justify-content: space-between;
   font-size: 24px;
   border-bottom: 1px solid #01ff01;
   padding: 10px;
+  margin-top: 2rem;
 }
 .stg-top span {
   margin: auto;
@@ -289,11 +300,29 @@ input[type=checkbox], input[type=radio] {
   display: flex;
   justify-content: center;
 }
+.stg-status p {
+  color: #01ff01;
+}
 
 body {
   background: #212326;
   color: #f0f8ff;
   font-family: sans-serif;
+  height: 100vh;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  place-items: center;
+}
+header i {
+  font-size: 1.9rem;
+  cursor: pointer;
+}
+header h1 {
+  font-weight: 500;
+  font-size: 2.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
