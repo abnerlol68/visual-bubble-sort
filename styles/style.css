@@ -304,11 +304,32 @@ input[type=checkbox], input[type=radio] {
   color: #01ff01;
 }
 
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+.buttons button {
+  width: 18rem;
+  height: 3rem;
+  border: none;
+  border-radius: 4px;
+}
+.buttons .sort {
+  background: #01ff01;
+}
+.buttons .disorder {
+  background: #ff4136;
+}
+
 body {
   background: #212326;
   color: #f0f8ff;
   font-family: sans-serif;
   height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
 
 header {
@@ -323,6 +344,220 @@ header i {
 header h1 {
   font-weight: 500;
   font-size: 2.2rem;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 5fr 1fr;
+}
+main .bars-layout {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+main .bars-layout div {
+  height: 100px;
+  background: cornflowerblue;
+}
+main .bars-layout div:first-child:nth-last-child(1),
+main .bars-layout div:first-child:nth-last-child(1) ~ div {
+  width: calc(100% / 1 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(2),
+main .bars-layout div:first-child:nth-last-child(2) ~ div {
+  width: calc(100% / 2 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(3),
+main .bars-layout div:first-child:nth-last-child(3) ~ div {
+  width: calc(100% / 3 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(4),
+main .bars-layout div:first-child:nth-last-child(4) ~ div {
+  width: calc(100% / 4 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(5),
+main .bars-layout div:first-child:nth-last-child(5) ~ div {
+  width: calc(100% / 5 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(6),
+main .bars-layout div:first-child:nth-last-child(6) ~ div {
+  width: calc(100% / 6 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(7),
+main .bars-layout div:first-child:nth-last-child(7) ~ div {
+  width: calc(100% / 7 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(8),
+main .bars-layout div:first-child:nth-last-child(8) ~ div {
+  width: calc(100% / 8 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(9),
+main .bars-layout div:first-child:nth-last-child(9) ~ div {
+  width: calc(100% / 9 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(10),
+main .bars-layout div:first-child:nth-last-child(10) ~ div {
+  width: calc(100% / 10 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(11),
+main .bars-layout div:first-child:nth-last-child(11) ~ div {
+  width: calc(100% / 11 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(12),
+main .bars-layout div:first-child:nth-last-child(12) ~ div {
+  width: calc(100% / 12 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(13),
+main .bars-layout div:first-child:nth-last-child(13) ~ div {
+  width: calc(100% / 13 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(14),
+main .bars-layout div:first-child:nth-last-child(14) ~ div {
+  width: calc(100% / 14 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(15),
+main .bars-layout div:first-child:nth-last-child(15) ~ div {
+  width: calc(100% / 15 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(16),
+main .bars-layout div:first-child:nth-last-child(16) ~ div {
+  width: calc(100% / 16 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(17),
+main .bars-layout div:first-child:nth-last-child(17) ~ div {
+  width: calc(100% / 17 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(18),
+main .bars-layout div:first-child:nth-last-child(18) ~ div {
+  width: calc(100% / 18 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(19),
+main .bars-layout div:first-child:nth-last-child(19) ~ div {
+  width: calc(100% / 19 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(20),
+main .bars-layout div:first-child:nth-last-child(20) ~ div {
+  width: calc(100% / 20 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(21),
+main .bars-layout div:first-child:nth-last-child(21) ~ div {
+  width: calc(100% / 21 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(22),
+main .bars-layout div:first-child:nth-last-child(22) ~ div {
+  width: calc(100% / 22 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(23),
+main .bars-layout div:first-child:nth-last-child(23) ~ div {
+  width: calc(100% / 23 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(24),
+main .bars-layout div:first-child:nth-last-child(24) ~ div {
+  width: calc(100% / 24 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(25),
+main .bars-layout div:first-child:nth-last-child(25) ~ div {
+  width: calc(100% / 25 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(26),
+main .bars-layout div:first-child:nth-last-child(26) ~ div {
+  width: calc(100% / 26 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(27),
+main .bars-layout div:first-child:nth-last-child(27) ~ div {
+  width: calc(100% / 27 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(28),
+main .bars-layout div:first-child:nth-last-child(28) ~ div {
+  width: calc(100% / 28 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(29),
+main .bars-layout div:first-child:nth-last-child(29) ~ div {
+  width: calc(100% / 29 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(30),
+main .bars-layout div:first-child:nth-last-child(30) ~ div {
+  width: calc(100% / 30 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(31),
+main .bars-layout div:first-child:nth-last-child(31) ~ div {
+  width: calc(100% / 31 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(32),
+main .bars-layout div:first-child:nth-last-child(32) ~ div {
+  width: calc(100% / 32 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(33),
+main .bars-layout div:first-child:nth-last-child(33) ~ div {
+  width: calc(100% / 33 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(34),
+main .bars-layout div:first-child:nth-last-child(34) ~ div {
+  width: calc(100% / 34 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(35),
+main .bars-layout div:first-child:nth-last-child(35) ~ div {
+  width: calc(100% / 35 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(36),
+main .bars-layout div:first-child:nth-last-child(36) ~ div {
+  width: calc(100% / 36 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(37),
+main .bars-layout div:first-child:nth-last-child(37) ~ div {
+  width: calc(100% / 37 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(38),
+main .bars-layout div:first-child:nth-last-child(38) ~ div {
+  width: calc(100% / 38 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(39),
+main .bars-layout div:first-child:nth-last-child(39) ~ div {
+  width: calc(100% / 39 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(40),
+main .bars-layout div:first-child:nth-last-child(40) ~ div {
+  width: calc(100% / 40 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(41),
+main .bars-layout div:first-child:nth-last-child(41) ~ div {
+  width: calc(100% / 41 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(42),
+main .bars-layout div:first-child:nth-last-child(42) ~ div {
+  width: calc(100% / 42 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(43),
+main .bars-layout div:first-child:nth-last-child(43) ~ div {
+  width: calc(100% / 43 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(44),
+main .bars-layout div:first-child:nth-last-child(44) ~ div {
+  width: calc(100% / 44 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(45),
+main .bars-layout div:first-child:nth-last-child(45) ~ div {
+  width: calc(100% / 45 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(46),
+main .bars-layout div:first-child:nth-last-child(46) ~ div {
+  width: calc(100% / 46 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(47),
+main .bars-layout div:first-child:nth-last-child(47) ~ div {
+  width: calc(100% / 47 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(48),
+main .bars-layout div:first-child:nth-last-child(48) ~ div {
+  width: calc(100% / 48 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(49),
+main .bars-layout div:first-child:nth-last-child(49) ~ div {
+  width: calc(100% / 49 - 5px);
+}
+main .bars-layout div:first-child:nth-last-child(50),
+main .bars-layout div:first-child:nth-last-child(50) ~ div {
+  width: calc(100% / 50 - 5px);
 }
 
 /*# sourceMappingURL=style.css.map */

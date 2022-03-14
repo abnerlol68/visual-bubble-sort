@@ -10,7 +10,7 @@
   <script defer src="https://kit.fontawesome.com/ab0b12f76d.js" crossorigin="anonymous"></script>
   <script defer src="js/main.js"></script>
   <title>Bubble Sort</title>
-</head>
+</head> 
 
 <body>
   <?php require "partials/sidebar-settings.php" ?>
@@ -19,8 +19,12 @@
       <h1>Bubble Sort Visualization</h1>
   </header>
 
-  <main></main>
-
-  <footer></footer>
+  <main>
+    <div class="bars-layout" id="barsLayout"></div>
+    <div class="buttons">
+      <button class="sort" id="sort">Sort</button>
+      <button class="disorder" id="disorder">Disorder</button>
+    </div>
+  </main>
 </body>
 </html>

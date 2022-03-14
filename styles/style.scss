@@ -1,11 +1,15 @@
 @use 'normalize';
 @use 'sidebar-settings';
+@use 'buttons-bottom';
 
 body {
     background: #212326;
     color: #f0f8ff;
     font-family: sans-serif;
     height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: auto 1fr;
 }
 
 header {
@@ -21,5 +25,29 @@ header {
     h1 {
         font-weight: 500;
         font-size: 2.2rem;
+    }
+}
+
+main {
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+
+    .bars-layout {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+
+        div {
+            height: 100px;
+            background: cornflowerblue;
+        }
+
+        // Calculation of the width of the divs with respect to the amount there is.
+        @for $i from 1 through 50 {
+            div:first-child:nth-last-child( #{$i} ),
+            div:first-child:nth-last-child( #{$i} ) ~ div {
+                width: calc(100% / #{$i} - 5px);
+            }
+        }
     }
 }

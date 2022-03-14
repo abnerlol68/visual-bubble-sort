@@ -1,3 +1,21 @@
+const barsLayout = document.getElementById('barsLayout');
+
+let arrTwoSort = [5,3,5,2];
+let timeTwoSort = 500;
+
+/**
+ * Insertion of divs with height and quantity 
+ * regarding the information of an array.
+ * @param {Array} arr 
+ */
+const renderBarsLayout = (arr) => {
+  barsLayout.innerHTML = arr.map(e => `
+    <div id=${e} style="height: ${e}%"></div>
+  `).join('');
+}
+
+renderBarsLayout(arrTwoSort);
+
 const btnSettings = document.getElementById('sdbSettings');
 const btnCloseSettings = document.getElementById('stgClose');
 
@@ -5,9 +23,6 @@ const btnSaveSettings = document.getElementById('saveSettings');
 const txtArray = document.getElementById('arrTwoSort');
 const txtTime = document.getElementById('timeTwoSort');
 const txtStatus = document.getElementById('stgStatus');
-
-let arrTwoSort = [5,3,5,2];
-let timeTwoSort = 500;
 
 let danger = '#ff4136';
 let success = '#01ff01';
@@ -24,7 +39,7 @@ btnSettings.onclick = () => {
 btnCloseSettings.onclick = () => {
   document.getElementById('stg').classList.remove('active');
   txtStatus.innerText = '';
-  txtArray.style.color = success;
+  txtStatus.style.color = success;
 }
 
 /**
@@ -43,4 +58,5 @@ btnSaveSettings.onclick = () => {
   }
 
   txtStatus.innerText = "Saved settings.";
+  renderBarsLayout(arrTwoSort);
 }
